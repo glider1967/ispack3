@@ -14,7 +14,7 @@
        pkgs = nixpkgs.legacyPackages.${system};
        ispack3 = pkgs.stdenv.mkDerivation {
          pname = "ispack3";
-         version = "3.2.2";
+         version = "3.2.2a";
          src = ./ispack-3.2.2;
          nativeBuildInputs = with pkgs; [ gfortran mpi ];
          buildPhase = ''
