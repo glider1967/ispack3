@@ -16,10 +16,9 @@
          pname = "ispack3";
          version = "3.2.2";
          src = ./ispack-3.2.2;
-         nativeBuildInputs = with pkgs; [ gfortran mpi gnumake ];
+         nativeBuildInputs = with pkgs; [ gfortran mpi ];
          buildPhase = ''
            make
-           make clean
          '';
          installPhase = ''
            mkdir -p $out/lib

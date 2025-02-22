@@ -13,7 +13,7 @@ all:
 	done
 	$(AR) $(ARFLAGS) $(STATICLIB) */src/*.o
 	$(RANLIB) $(STATICLIB)
-	$(LD) $(LDFLAGS) -shared -o $(SHAREDLIB) */src/*.o 
+#   $(LD) $(LDFLAGS) -shared -o $(SHAREDLIB) */src/*.o 
 
 clean:
 	@for i in $(DIRS) ; do \
